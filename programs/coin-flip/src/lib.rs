@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 use num_derive::*;
-use num_traits::*;
+// use num_traits::*;
 
 declare_id!("2WWFGRA4f81ubcjtkh112obV8brzF6nkhBCDGh7Z8hqo");
 
@@ -75,7 +75,7 @@ pub mod coin_flip {
     }
 
 
-    pub fn delete(_ctx: Context<Delete>, player: Pubkey) -> Result<()> {
+    pub fn delete(_ctx: Context<Delete>) -> Result<()> {
         Ok(())
     }
 }
